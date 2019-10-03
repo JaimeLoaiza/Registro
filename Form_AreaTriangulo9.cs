@@ -10,22 +10,11 @@ using System.Windows.Forms;
 
 namespace Registros
 {
-    public partial class Form_Triangulo2 : Form
+    public partial class Form_AreaTriangulo9 : Form
     {
-        public Form_Triangulo2()
+        public Form_AreaTriangulo9()
         {
             InitializeComponent();
-        }
-
-        private void Btnsalir_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
-
-        private void Form_Triangulo2_Load(object sender, EventArgs e)
-        {
-            txtresultado.Visible = false;
-            txtbase.Focus();
         }
 
         private void Btncalcular_Click(object sender, EventArgs e)
@@ -44,7 +33,6 @@ namespace Registros
             txtbase.Clear();
             txtaltura.Clear();
             txtresultado.Visible = true;
-
         }
 
         private void Btnlimpiar_Click(object sender, EventArgs e)
@@ -52,6 +40,17 @@ namespace Registros
             txtresultado.Clear();
             txtbase.Focus();
             txtresultado.Visible = false;
+        }
+
+        private void Btnsalir_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void Form_AreaTriangulo9_Load(object sender, EventArgs e)
+        {
+            txtresultado.Visible = false;
+            txtbase.Focus();
         }
     }
 }

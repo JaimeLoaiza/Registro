@@ -94,6 +94,18 @@
     <Compile Include="Form8.Designer.cs">
       <DependentUpon>Form8.cs</DependentUpon>
     </Compile>
+    <Compile Include="Form_AreaTriangulo9.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_AreaTriangulo9.Designer.cs">
+      <DependentUpon>Form_AreaTriangulo9.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_ÁreaCuadrado10.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_ÁreaCuadrado10.Designer.cs">
+      <DependentUpon>Form_ÁreaCuadrado10.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Usuario y Contraseña 2.cs">
@@ -125,6 +137,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form8.resx">
       <DependentUpon>Form8.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_AreaTriangulo9.resx">
+      <DependentUpon>Form_AreaTriangulo9.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_ÁreaCuadrado10.resx">
+      <DependentUpon>Form_ÁreaCuadrado10.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

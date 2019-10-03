@@ -62,6 +62,7 @@
             this.btnareacuadrado.TabIndex = 2;
             this.btnareacuadrado.Text = "Área del Cuadrado";
             this.btnareacuadrado.UseVisualStyleBackColor = true;
+            this.btnareacuadrado.Click += new System.EventHandler(this.Btnareacuadrado_Click);
             // 
             // btnalturatriangulo
             // 
@@ -71,6 +72,7 @@
             this.btnalturatriangulo.TabIndex = 3;
             this.btnalturatriangulo.Text = "Altura del Triangulo";
             this.btnalturatriangulo.UseVisualStyleBackColor = true;
+            this.btnalturatriangulo.Click += new System.EventHandler(this.Btnalturatriangulo_Click);
             // 
             // label1
             // 

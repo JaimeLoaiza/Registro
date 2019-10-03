@@ -36,5 +36,41 @@ namespace Registros
 
             }
         }
+
+        private void Btnlimpiar_Click(object sender, EventArgs e)
+        {
+            txtnumerodocumento.Clear();
+            txtnombre.Clear();
+            txtapellido.Clear();
+            txtedad.Clear();
+            txtcontraseñaadm.Clear();
+            txtcontraseñausu.Clear();
+            txtnumerodocumento.Focus();
+        }
+
+        private void Rbadministrador_CheckedChanged(object sender, EventArgs e)
+        {
+            if (rbadministrador.Checked)
+            {
+                rbusuario.Enabled = false;
+                lblcontraseñausu.Visible = false;
+                txtcontraseñausu.Visible = false;
+            }
+        }
+
+        private void Rbusuario_CheckedChanged(object sender, EventArgs e)
+        {
+            if (rbusuario.Checked)
+            {
+                rbadministrador.Enabled = false;
+                lblcontraseñaadm.Visible = false;
+                txtcontraseñaadm.Visible = false;
+            }
+        }
+
+        private void Lblcontraseñaadm_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

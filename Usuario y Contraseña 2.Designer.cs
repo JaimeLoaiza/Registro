@@ -36,6 +36,7 @@
             this.btnaccederusu = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.gbadministrador = new System.Windows.Forms.GroupBox();
+            this.btnaccederadm = new System.Windows.Forms.Button();
             this.txtcontraseñaadm = new System.Windows.Forms.TextBox();
             this.btnlimpiaradm = new System.Windows.Forms.Button();
             this.txtcedulaadm = new System.Windows.Forms.TextBox();
@@ -47,7 +48,6 @@
             this.btnsalir = new System.Windows.Forms.Button();
             this.rbadministrador = new System.Windows.Forms.RadioButton();
             this.rbusuario = new System.Windows.Forms.RadioButton();
-            this.btnaccederadm = new System.Windows.Forms.Button();
             this.gbadministrador.SuspendLayout();
             this.gbusuario.SuspendLayout();
             this.SuspendLayout();
@@ -137,6 +137,18 @@
             this.gbadministrador.TabStop = false;
             this.gbadministrador.Text = "ADMINISTRADOR";
             // 
+            // btnaccederadm
+            // 
+            this.btnaccederadm.BackColor = System.Drawing.Color.BlueViolet;
+            this.btnaccederadm.ForeColor = System.Drawing.Color.White;
+            this.btnaccederadm.Location = new System.Drawing.Point(91, 170);
+            this.btnaccederadm.Name = "btnaccederadm";
+            this.btnaccederadm.Size = new System.Drawing.Size(100, 31);
+            this.btnaccederadm.TabIndex = 21;
+            this.btnaccederadm.Text = "Acceder";
+            this.btnaccederadm.UseVisualStyleBackColor = false;
+            this.btnaccederadm.Click += new System.EventHandler(this.Btnaccederadm_Click);
+            // 
             // txtcontraseñaadm
             // 
             this.txtcontraseñaadm.Location = new System.Drawing.Point(91, 117);
@@ -220,7 +232,7 @@
             // btnsalir
             // 
             this.btnsalir.BackColor = System.Drawing.Color.White;
-            this.btnsalir.Location = new System.Drawing.Point(497, 410);
+            this.btnsalir.Location = new System.Drawing.Point(508, 408);
             this.btnsalir.Name = "btnsalir";
             this.btnsalir.Size = new System.Drawing.Size(108, 30);
             this.btnsalir.TabIndex = 11;
@@ -254,24 +266,12 @@
             this.rbusuario.UseVisualStyleBackColor = true;
             this.rbusuario.CheckedChanged += new System.EventHandler(this.Rbusuario_CheckedChanged);
             // 
-            // btnaccederadm
-            // 
-            this.btnaccederadm.BackColor = System.Drawing.Color.BlueViolet;
-            this.btnaccederadm.ForeColor = System.Drawing.Color.White;
-            this.btnaccederadm.Location = new System.Drawing.Point(91, 170);
-            this.btnaccederadm.Name = "btnaccederadm";
-            this.btnaccederadm.Size = new System.Drawing.Size(100, 31);
-            this.btnaccederadm.TabIndex = 21;
-            this.btnaccederadm.Text = "Acceder";
-            this.btnaccederadm.UseVisualStyleBackColor = false;
-            this.btnaccederadm.Click += new System.EventHandler(this.Btnaccederadm_Click);
-            // 
             // Form_Sesion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.ClientSize = new System.Drawing.Size(628, 451);
+            this.ClientSize = new System.Drawing.Size(628, 450);
             this.Controls.Add(this.rbusuario);
             this.Controls.Add(this.rbadministrador);
             this.Controls.Add(this.btnsalir);

@@ -292,7 +292,7 @@
             this.Controls.Add(this.lbltipodocumento);
             this.Controls.Add(this.label1);
             this.Name = "Form_Registros3";
-            this.Text = "Registro de Usuario";
+            this.Text = "Tipo";
             this.ResumeLayout(false);
             this.PerformLayout();
 

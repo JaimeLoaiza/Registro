@@ -41,5 +41,10 @@ namespace Registros
         {
             this.Close();
         }
+
+        private void Form_Inicio_Sesion_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

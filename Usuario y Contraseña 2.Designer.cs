@@ -28,23 +28,23 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.lblcedulausu = new System.Windows.Forms.Label();
-            this.lblcontraseñausu = new System.Windows.Forms.Label();
-            this.txtcedulausu = new System.Windows.Forms.TextBox();
-            this.txtcontraseñausu = new System.Windows.Forms.TextBox();
+            this.lblcedulausuario = new System.Windows.Forms.Label();
+            this.lblcontraseñausuario = new System.Windows.Forms.Label();
+            this.txtcedulausuario = new System.Windows.Forms.TextBox();
+            this.txtcontraseñausuario = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.btnaccederusu = new System.Windows.Forms.Button();
+            this.btnaccederusuario = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.gbadministrador = new System.Windows.Forms.GroupBox();
-            this.btnaccederadm = new System.Windows.Forms.Button();
-            this.txtcontraseñaadm = new System.Windows.Forms.TextBox();
-            this.btnlimpiaradm = new System.Windows.Forms.Button();
-            this.txtcedulaadm = new System.Windows.Forms.TextBox();
+            this.btnaccederadministrador = new System.Windows.Forms.Button();
+            this.txtcontraseñaadministrador = new System.Windows.Forms.TextBox();
+            this.btnlimpiaradministrador = new System.Windows.Forms.Button();
+            this.txtcedulaadministrador = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.lblcedulaadm = new System.Windows.Forms.Label();
-            this.lblcontraseñaadm = new System.Windows.Forms.Label();
+            this.lblcedulaadministrador = new System.Windows.Forms.Label();
+            this.lblcontraseñaadministrador = new System.Windows.Forms.Label();
             this.gbusuario = new System.Windows.Forms.GroupBox();
-            this.btnlimpiarusu = new System.Windows.Forms.Button();
+            this.btnlimpiarusuario = new System.Windows.Forms.Button();
             this.btnsalir = new System.Windows.Forms.Button();
             this.rbadministrador = new System.Windows.Forms.RadioButton();
             this.rbusuario = new System.Windows.Forms.RadioButton();
@@ -52,41 +52,41 @@
             this.gbusuario.SuspendLayout();
             this.SuspendLayout();
             // 
-            // lblcedulausu
+            // lblcedulausuario
             // 
-            this.lblcedulausu.AutoSize = true;
-            this.lblcedulausu.Location = new System.Drawing.Point(17, 84);
-            this.lblcedulausu.Name = "lblcedulausu";
-            this.lblcedulausu.Size = new System.Drawing.Size(46, 13);
-            this.lblcedulausu.TabIndex = 0;
-            this.lblcedulausu.Text = "Cédula";
-            this.lblcedulausu.Click += new System.EventHandler(this.Label1_Click);
+            this.lblcedulausuario.AutoSize = true;
+            this.lblcedulausuario.Location = new System.Drawing.Point(17, 84);
+            this.lblcedulausuario.Name = "lblcedulausuario";
+            this.lblcedulausuario.Size = new System.Drawing.Size(46, 13);
+            this.lblcedulausuario.TabIndex = 0;
+            this.lblcedulausuario.Text = "Cédula";
+            this.lblcedulausuario.Click += new System.EventHandler(this.Label1_Click);
             // 
-            // lblcontraseñausu
+            // lblcontraseñausuario
             // 
-            this.lblcontraseñausu.AutoSize = true;
-            this.lblcontraseñausu.Location = new System.Drawing.Point(17, 120);
-            this.lblcontraseñausu.Name = "lblcontraseñausu";
-            this.lblcontraseñausu.Size = new System.Drawing.Size(71, 13);
-            this.lblcontraseñausu.TabIndex = 1;
-            this.lblcontraseñausu.Text = "Contraseña";
+            this.lblcontraseñausuario.AutoSize = true;
+            this.lblcontraseñausuario.Location = new System.Drawing.Point(17, 120);
+            this.lblcontraseñausuario.Name = "lblcontraseñausuario";
+            this.lblcontraseñausuario.Size = new System.Drawing.Size(71, 13);
+            this.lblcontraseñausuario.TabIndex = 1;
+            this.lblcontraseñausuario.Text = "Contraseña";
             // 
-            // txtcedulausu
+            // txtcedulausuario
             // 
-            this.txtcedulausu.Location = new System.Drawing.Point(93, 81);
-            this.txtcedulausu.Name = "txtcedulausu";
-            this.txtcedulausu.Size = new System.Drawing.Size(100, 20);
-            this.txtcedulausu.TabIndex = 2;
+            this.txtcedulausuario.Location = new System.Drawing.Point(93, 81);
+            this.txtcedulausuario.Name = "txtcedulausuario";
+            this.txtcedulausuario.Size = new System.Drawing.Size(100, 20);
+            this.txtcedulausuario.TabIndex = 2;
             // 
-            // txtcontraseñausu
+            // txtcontraseñausuario
             // 
-            this.txtcontraseñausu.Location = new System.Drawing.Point(93, 117);
-            this.txtcontraseñausu.MaxLength = 6;
-            this.txtcontraseñausu.Name = "txtcontraseñausu";
-            this.txtcontraseñausu.Size = new System.Drawing.Size(100, 20);
-            this.txtcontraseñausu.TabIndex = 3;
-            this.txtcontraseñausu.UseSystemPasswordChar = true;
-            this.txtcontraseñausu.TextChanged += new System.EventHandler(this.Txtcontraseña_TextChanged);
+            this.txtcontraseñausuario.Location = new System.Drawing.Point(93, 117);
+            this.txtcontraseñausuario.MaxLength = 6;
+            this.txtcontraseñausuario.Name = "txtcontraseñausuario";
+            this.txtcontraseñausuario.Size = new System.Drawing.Size(100, 20);
+            this.txtcontraseñausuario.TabIndex = 3;
+            this.txtcontraseñausuario.UseSystemPasswordChar = true;
+            this.txtcontraseñausuario.TextChanged += new System.EventHandler(this.Txtcontraseña_TextChanged);
             // 
             // label3
             // 
@@ -98,17 +98,17 @@
             this.label3.TabIndex = 4;
             this.label3.Text = "Ingrese";
             // 
-            // btnaccederusu
+            // btnaccederusuario
             // 
-            this.btnaccederusu.BackColor = System.Drawing.Color.BlueViolet;
-            this.btnaccederusu.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnaccederusu.Location = new System.Drawing.Point(93, 170);
-            this.btnaccederusu.Name = "btnaccederusu";
-            this.btnaccederusu.Size = new System.Drawing.Size(100, 31);
-            this.btnaccederusu.TabIndex = 5;
-            this.btnaccederusu.Text = "Acceder";
-            this.btnaccederusu.UseVisualStyleBackColor = false;
-            this.btnaccederusu.Click += new System.EventHandler(this.Btnaccederusu_Click);
+            this.btnaccederusuario.BackColor = System.Drawing.Color.BlueViolet;
+            this.btnaccederusuario.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnaccederusuario.Location = new System.Drawing.Point(93, 170);
+            this.btnaccederusuario.Name = "btnaccederusuario";
+            this.btnaccederusuario.Size = new System.Drawing.Size(100, 31);
+            this.btnaccederusuario.TabIndex = 5;
+            this.btnaccederusuario.Text = "Acceder";
+            this.btnaccederusuario.UseVisualStyleBackColor = false;
+            this.btnaccederusuario.Click += new System.EventHandler(this.Btnaccederusuario_Click);
             // 
             // label1
             // 
@@ -122,13 +122,13 @@
             // 
             // gbadministrador
             // 
-            this.gbadministrador.Controls.Add(this.btnaccederadm);
-            this.gbadministrador.Controls.Add(this.txtcontraseñaadm);
-            this.gbadministrador.Controls.Add(this.btnlimpiaradm);
-            this.gbadministrador.Controls.Add(this.txtcedulaadm);
+            this.gbadministrador.Controls.Add(this.btnaccederadministrador);
+            this.gbadministrador.Controls.Add(this.txtcontraseñaadministrador);
+            this.gbadministrador.Controls.Add(this.btnlimpiaradministrador);
+            this.gbadministrador.Controls.Add(this.txtcedulaadministrador);
             this.gbadministrador.Controls.Add(this.label5);
-            this.gbadministrador.Controls.Add(this.lblcedulaadm);
-            this.gbadministrador.Controls.Add(this.lblcontraseñaadm);
+            this.gbadministrador.Controls.Add(this.lblcedulaadministrador);
+            this.gbadministrador.Controls.Add(this.lblcontraseñaadministrador);
             this.gbadministrador.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gbadministrador.Location = new System.Drawing.Point(28, 116);
             this.gbadministrador.Name = "gbadministrador";
@@ -137,42 +137,42 @@
             this.gbadministrador.TabStop = false;
             this.gbadministrador.Text = "ADMINISTRADOR";
             // 
-            // btnaccederadm
+            // btnaccederadministrador
             // 
-            this.btnaccederadm.BackColor = System.Drawing.Color.BlueViolet;
-            this.btnaccederadm.ForeColor = System.Drawing.Color.White;
-            this.btnaccederadm.Location = new System.Drawing.Point(91, 170);
-            this.btnaccederadm.Name = "btnaccederadm";
-            this.btnaccederadm.Size = new System.Drawing.Size(100, 31);
-            this.btnaccederadm.TabIndex = 21;
-            this.btnaccederadm.Text = "Acceder";
-            this.btnaccederadm.UseVisualStyleBackColor = false;
-            this.btnaccederadm.Click += new System.EventHandler(this.Btnaccederadm_Click);
+            this.btnaccederadministrador.BackColor = System.Drawing.Color.BlueViolet;
+            this.btnaccederadministrador.ForeColor = System.Drawing.Color.White;
+            this.btnaccederadministrador.Location = new System.Drawing.Point(91, 170);
+            this.btnaccederadministrador.Name = "btnaccederadministrador";
+            this.btnaccederadministrador.Size = new System.Drawing.Size(100, 31);
+            this.btnaccederadministrador.TabIndex = 21;
+            this.btnaccederadministrador.Text = "Acceder";
+            this.btnaccederadministrador.UseVisualStyleBackColor = false;
+            this.btnaccederadministrador.Click += new System.EventHandler(this.Btnaccederadm_Click);
             // 
-            // txtcontraseñaadm
+            // txtcontraseñaadministrador
             // 
-            this.txtcontraseñaadm.Location = new System.Drawing.Point(91, 117);
-            this.txtcontraseñaadm.Name = "txtcontraseñaadm";
-            this.txtcontraseñaadm.Size = new System.Drawing.Size(100, 20);
-            this.txtcontraseñaadm.TabIndex = 20;
-            this.txtcontraseñaadm.UseSystemPasswordChar = true;
+            this.txtcontraseñaadministrador.Location = new System.Drawing.Point(91, 117);
+            this.txtcontraseñaadministrador.Name = "txtcontraseñaadministrador";
+            this.txtcontraseñaadministrador.Size = new System.Drawing.Size(100, 20);
+            this.txtcontraseñaadministrador.TabIndex = 20;
+            this.txtcontraseñaadministrador.UseSystemPasswordChar = true;
             // 
-            // btnlimpiaradm
+            // btnlimpiaradministrador
             // 
-            this.btnlimpiaradm.Location = new System.Drawing.Point(173, 227);
-            this.btnlimpiaradm.Name = "btnlimpiaradm";
-            this.btnlimpiaradm.Size = new System.Drawing.Size(92, 32);
-            this.btnlimpiaradm.TabIndex = 9;
-            this.btnlimpiaradm.Text = "Limpiar";
-            this.btnlimpiaradm.UseVisualStyleBackColor = true;
-            this.btnlimpiaradm.Click += new System.EventHandler(this.Btnlimpiaradm_Click);
+            this.btnlimpiaradministrador.Location = new System.Drawing.Point(173, 227);
+            this.btnlimpiaradministrador.Name = "btnlimpiaradministrador";
+            this.btnlimpiaradministrador.Size = new System.Drawing.Size(92, 32);
+            this.btnlimpiaradministrador.TabIndex = 9;
+            this.btnlimpiaradministrador.Text = "Limpiar";
+            this.btnlimpiaradministrador.UseVisualStyleBackColor = true;
+            this.btnlimpiaradministrador.Click += new System.EventHandler(this.Btnlimpiaradministrador_Click);
             // 
-            // txtcedulaadm
+            // txtcedulaadministrador
             // 
-            this.txtcedulaadm.Location = new System.Drawing.Point(91, 81);
-            this.txtcedulaadm.Name = "txtcedulaadm";
-            this.txtcedulaadm.Size = new System.Drawing.Size(100, 20);
-            this.txtcedulaadm.TabIndex = 19;
+            this.txtcedulaadministrador.Location = new System.Drawing.Point(91, 81);
+            this.txtcedulaadministrador.Name = "txtcedulaadministrador";
+            this.txtcedulaadministrador.Size = new System.Drawing.Size(100, 20);
+            this.txtcedulaadministrador.TabIndex = 19;
             // 
             // label5
             // 
@@ -184,33 +184,33 @@
             this.label5.TabIndex = 15;
             this.label5.Text = "Ingrese";
             // 
-            // lblcedulaadm
+            // lblcedulaadministrador
             // 
-            this.lblcedulaadm.AutoSize = true;
-            this.lblcedulaadm.Location = new System.Drawing.Point(15, 84);
-            this.lblcedulaadm.Name = "lblcedulaadm";
-            this.lblcedulaadm.Size = new System.Drawing.Size(46, 13);
-            this.lblcedulaadm.TabIndex = 11;
-            this.lblcedulaadm.Text = "Cédula";
+            this.lblcedulaadministrador.AutoSize = true;
+            this.lblcedulaadministrador.Location = new System.Drawing.Point(15, 84);
+            this.lblcedulaadministrador.Name = "lblcedulaadministrador";
+            this.lblcedulaadministrador.Size = new System.Drawing.Size(46, 13);
+            this.lblcedulaadministrador.TabIndex = 11;
+            this.lblcedulaadministrador.Text = "Cédula";
             // 
-            // lblcontraseñaadm
+            // lblcontraseñaadministrador
             // 
-            this.lblcontraseñaadm.AutoSize = true;
-            this.lblcontraseñaadm.Location = new System.Drawing.Point(15, 120);
-            this.lblcontraseñaadm.Name = "lblcontraseñaadm";
-            this.lblcontraseñaadm.Size = new System.Drawing.Size(71, 13);
-            this.lblcontraseñaadm.TabIndex = 12;
-            this.lblcontraseñaadm.Text = "Contraseña";
+            this.lblcontraseñaadministrador.AutoSize = true;
+            this.lblcontraseñaadministrador.Location = new System.Drawing.Point(15, 120);
+            this.lblcontraseñaadministrador.Name = "lblcontraseñaadministrador";
+            this.lblcontraseñaadministrador.Size = new System.Drawing.Size(71, 13);
+            this.lblcontraseñaadministrador.TabIndex = 12;
+            this.lblcontraseñaadministrador.Text = "Contraseña";
             // 
             // gbusuario
             // 
-            this.gbusuario.Controls.Add(this.btnlimpiarusu);
-            this.gbusuario.Controls.Add(this.lblcedulausu);
-            this.gbusuario.Controls.Add(this.lblcontraseñausu);
-            this.gbusuario.Controls.Add(this.txtcedulausu);
-            this.gbusuario.Controls.Add(this.txtcontraseñausu);
+            this.gbusuario.Controls.Add(this.btnlimpiarusuario);
+            this.gbusuario.Controls.Add(this.lblcedulausuario);
+            this.gbusuario.Controls.Add(this.lblcontraseñausuario);
+            this.gbusuario.Controls.Add(this.txtcedulausuario);
+            this.gbusuario.Controls.Add(this.txtcontraseñausuario);
             this.gbusuario.Controls.Add(this.label3);
-            this.gbusuario.Controls.Add(this.btnaccederusu);
+            this.gbusuario.Controls.Add(this.btnaccederusuario);
             this.gbusuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gbusuario.Location = new System.Drawing.Point(334, 116);
             this.gbusuario.Name = "gbusuario";
@@ -219,15 +219,15 @@
             this.gbusuario.TabStop = false;
             this.gbusuario.Text = "USUARIO";
             // 
-            // btnlimpiarusu
+            // btnlimpiarusuario
             // 
-            this.btnlimpiarusu.Location = new System.Drawing.Point(173, 227);
-            this.btnlimpiarusu.Name = "btnlimpiarusu";
-            this.btnlimpiarusu.Size = new System.Drawing.Size(92, 32);
-            this.btnlimpiarusu.TabIndex = 10;
-            this.btnlimpiarusu.Text = "Limpiar";
-            this.btnlimpiarusu.UseVisualStyleBackColor = true;
-            this.btnlimpiarusu.Click += new System.EventHandler(this.Btnlimpiarusu_Click);
+            this.btnlimpiarusuario.Location = new System.Drawing.Point(173, 227);
+            this.btnlimpiarusuario.Name = "btnlimpiarusuario";
+            this.btnlimpiarusuario.Size = new System.Drawing.Size(92, 32);
+            this.btnlimpiarusuario.TabIndex = 10;
+            this.btnlimpiarusuario.Text = "Limpiar";
+            this.btnlimpiarusuario.UseVisualStyleBackColor = true;
+            this.btnlimpiarusuario.Click += new System.EventHandler(this.Btnlimpiarusuario_Click);
             // 
             // btnsalir
             // 
@@ -292,25 +292,25 @@
 
         #endregion
 
-        private System.Windows.Forms.Label lblcedulausu;
-        private System.Windows.Forms.Label lblcontraseñausu;
-        private System.Windows.Forms.TextBox txtcedulausu;
-        private System.Windows.Forms.TextBox txtcontraseñausu;
+        private System.Windows.Forms.Label lblcedulausuario;
+        private System.Windows.Forms.Label lblcontraseñausuario;
+        private System.Windows.Forms.TextBox txtcedulausuario;
+        private System.Windows.Forms.TextBox txtcontraseñausuario;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Button btnaccederusu;
+        private System.Windows.Forms.Button btnaccederusuario;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.GroupBox gbadministrador;
-        private System.Windows.Forms.TextBox txtcontraseñaadm;
-        private System.Windows.Forms.Button btnlimpiaradm;
-        private System.Windows.Forms.TextBox txtcedulaadm;
+        private System.Windows.Forms.TextBox txtcontraseñaadministrador;
+        private System.Windows.Forms.Button btnlimpiaradministrador;
+        private System.Windows.Forms.TextBox txtcedulaadministrador;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label lblcedulaadm;
-        private System.Windows.Forms.Label lblcontraseñaadm;
+        private System.Windows.Forms.Label lblcedulaadministrador;
+        private System.Windows.Forms.Label lblcontraseñaadministrador;
         private System.Windows.Forms.GroupBox gbusuario;
-        private System.Windows.Forms.Button btnlimpiarusu;
+        private System.Windows.Forms.Button btnlimpiarusuario;
         private System.Windows.Forms.Button btnsalir;
         private System.Windows.Forms.RadioButton rbadministrador;
         private System.Windows.Forms.RadioButton rbusuario;
-        private System.Windows.Forms.Button btnaccederadm;
+        private System.Windows.Forms.Button btnaccederadministrador;
     }
 }

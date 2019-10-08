@@ -28,9 +28,9 @@ namespace Registros
             
         }
 
-        private void Btnaccederusu_Click(object sender, EventArgs e)
+        private void Btnaccederusuario_Click(object sender, EventArgs e)
         {
-            if (txtcontraseñausu.Text == "9876")
+            if (txtcontraseñausuario.Text == "9876")
             {
                 MessageBox.Show("Contraseña Correcta", "Aviso");
                 Form_Usuario5 test = new Form_Usuario5();
@@ -86,7 +86,7 @@ namespace Registros
 
         private void Btnaccederadm_Click(object sender, EventArgs e)
         {
-            if (txtcontraseñaadm.Text == "12345")
+            if (txtcontraseñaadministrador.Text == "12345")
             {
                 MessageBox.Show("Contraseña Correcta", "Aviso");
                 Form_Administrador4 test = new Form_Administrador4();
@@ -108,18 +108,18 @@ namespace Registros
             }
         }
 
-        private void Btnlimpiaradm_Click(object sender, EventArgs e)
+        private void Btnlimpiaradministrador_Click(object sender, EventArgs e)
         {
-            txtcedulaadm.Clear();
-            txtcontraseñaadm.Clear();
-            txtcedulaadm.Focus();
+            txtcedulaadministrador.Clear();
+            txtcontraseñaadministrador.Clear();
+            txtcedulaadministrador.Focus();
         }
 
-        private void Btnlimpiarusu_Click(object sender, EventArgs e)
+        private void Btnlimpiarusuario_Click(object sender, EventArgs e)
         {
-            txtcedulausu.Clear();
-            txtcontraseñausu.Clear();
-            txtcedulausu.Focus();
+            txtcedulausuario.Clear();
+            txtcontraseñausuario.Clear();
+            txtcedulausuario.Focus();
         }
     }
 }

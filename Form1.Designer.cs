@@ -113,6 +113,7 @@
             this.Controls.Add(this.btnregistrate);
             this.Name = "Form_Inicio_Sesion";
             this.Text = "Inicio Sesión";
+            this.Load += new System.EventHandler(this.Form_Inicio_Sesion_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

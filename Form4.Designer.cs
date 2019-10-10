@@ -75,6 +75,7 @@
             this.btnbuscador.TabIndex = 3;
             this.btnbuscador.Text = "Buscador";
             this.btnbuscador.UseVisualStyleBackColor = true;
+            this.btnbuscador.Click += new System.EventHandler(this.Btnbuscador_Click);
             // 
             // btnareacuadrado
             // 

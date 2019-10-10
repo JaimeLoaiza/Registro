@@ -61,5 +61,15 @@ namespace Registros
 
             }
         }
+
+        private void Btnbuscador_Click(object sender, EventArgs e)
+        {
+            Form_Buscador9 test = new Form_Buscador9();
+            test.ShowDialog();
+            if (test.DialogResult == DialogResult.Yes)
+            {
+
+            }
+        }
     }
 }

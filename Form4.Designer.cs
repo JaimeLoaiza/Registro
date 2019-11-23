@@ -66,6 +66,7 @@
             this.btnmatriz.TabIndex = 2;
             this.btnmatriz.Text = "Matriz";
             this.btnmatriz.UseVisualStyleBackColor = true;
+            this.btnmatriz.Click += new System.EventHandler(this.btnmatriz_Click);
             // 
             // btnbuscador
             // 

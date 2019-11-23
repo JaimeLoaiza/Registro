@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Registros
@@ -65,6 +58,16 @@ namespace Registros
         private void Btnbuscador_Click(object sender, EventArgs e)
         {
             Form_Buscador9 test = new Form_Buscador9();
+            test.ShowDialog();
+            if (test.DialogResult == DialogResult.Yes)
+            {
+
+            }
+        }
+
+        private void btnmatriz_Click(object sender, EventArgs e)
+        {
+            Matriz_Administrador test = new Matriz_Administrador();
             test.ShowDialog();
             if (test.DialogResult == DialogResult.Yes)
             {

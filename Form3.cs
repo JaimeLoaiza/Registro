@@ -1,12 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.OleDb;
 
 namespace Registros
 {
@@ -39,13 +33,15 @@ namespace Registros
 
         private void Btnlimpiar_Click(object sender, EventArgs e)
         {
-            txtnumerodocumento.Clear();
+            txtcedula.Clear();
             txtnombre.Clear();
             txtapellido.Clear();
             txtedad.Clear();
-            txtcontraseñaadm.Clear();
-            txtcontraseñausu.Clear();
-            txtnumerodocumento.Focus();
+            txtcontraseña.Clear();
+            txtcedula.Focus();
+
+            rbadministrador.Enabled = true;
+            rbusuario.Enabled = true;
         }
 
         private void Rbadministrador_CheckedChanged(object sender, EventArgs e)
@@ -53,8 +49,8 @@ namespace Registros
             if (rbadministrador.Checked)
             {
                 rbusuario.Enabled = false;
-                lblcontraseñausu.Visible = false;
-                txtcontraseñausu.Visible = false;
+                lblcontraseña.Visible = true;
+                txtcontraseña.Visible = true;
             }
         }
 
@@ -63,14 +59,40 @@ namespace Registros
             if (rbusuario.Checked)
             {
                 rbadministrador.Enabled = false;
-                lblcontraseñaadm.Visible = false;
-                txtcontraseñaadm.Visible = false;
+                lblcontraseña.Visible = true;
+                txtcontraseña.Visible = true;
             }
         }
 
-        private void Lblcontraseñaadm_Click(object sender, EventArgs e)
+        private void Form_Registros3_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnguardarregistro_Click(object sender, EventArgs e)
+        {
+            string Cedula = null;
+            OleDbConnection connection;
+            Cedula = "Provider=SQLNCLI11;Integrated Security=SSPI";
+            connection = new OleDbConnection(Cedula);
+
+            try
+            {
+                connection.Open();
+                MessageBox.Show(" Connection Open !");
+                connection.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(" Can not Open Connection !");
+            }
+
+            if (txtcontraseña.Text == txtcontraseña.Text)
+            {
+                MessageBox.Show("Su Registro Ha sido Creado Exitosamente !");
+            }
+            else
+                MessageBox.Show("No se Creo el Registro !");
         }
     }
 }

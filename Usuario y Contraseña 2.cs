@@ -1,17 +1,12 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Registros
 {
     public partial class Form_Sesion : Form
     {
+        private const string password = "9876";
+
         int a = 0;
         public Form_Sesion()
         {
@@ -25,30 +20,27 @@ namespace Registros
 
         private void Txtcontraseña_TextChanged(object sender, EventArgs e)
         {
-            
+
         }
 
         private void Btnaccederusuario_Click(object sender, EventArgs e)
         {
-            if (txtcontraseñausuario.Text == "9876")
+            if (txtcontraseñausuario.Text == password)
             {
                 MessageBox.Show("Contraseña Correcta", "Aviso");
                 Form_Usuario5 test = new Form_Usuario5();
                 test.ShowDialog();
-                if (test.DialogResult == DialogResult.Yes)
-                {
-
-                }
-                this.Hide();
             }
             else
             {
+                MessageBox.Show("Contraseña Incorrecta", "Aviso");
                 a = a + 1;
                 if (a == 4)
                 {
-                    MessageBox.Show("Contraseña Incorrecta", "Aviso");
+                    MessageBox.Show("Se ha bloqueado tu usuario", "Aviso");
                     this.Close();
                 }
+                this.Close();
             }
         }
 
@@ -89,13 +81,8 @@ namespace Registros
             if (txtcontraseñaadministrador.Text == "12345")
             {
                 MessageBox.Show("Contraseña Correcta", "Aviso");
-                Form_Administrador4 test = new Form_Administrador4();
-                test.ShowDialog();
-                if (test.DialogResult == DialogResult.Yes)
-                {
-
-                }
-                this.Hide();
+                Form_Administrador4 form_Administrador = new Form_Administrador4();
+                form_Administrador.ShowDialog();
             }
             else
             {

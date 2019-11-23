@@ -108,7 +108,7 @@
             this.Controls.Add(this.btnbuscador);
             this.Controls.Add(this.btnmatriz);
             this.Name = "Form_Usuario5";
-            this.Text = "Sesión Usuario";
+            this.Text = "D C";
             this.ResumeLayout(false);
             this.PerformLayout();
 

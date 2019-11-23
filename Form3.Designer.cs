@@ -1,4 +1,6 @@
-﻿namespace Registros
+﻿using System;
+
+namespace Registros
 {
     partial class Form_Registros3
     {
@@ -28,39 +30,37 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
+            this.hazturegistro = new System.Windows.Forms.Label();
             this.lbltipodocumento = new System.Windows.Forms.Label();
-            this.lblnumerodocumento = new System.Windows.Forms.Label();
+            this.lblcedula = new System.Windows.Forms.Label();
             this.lblnombre = new System.Windows.Forms.Label();
             this.lblapellido = new System.Windows.Forms.Label();
             this.lbledad = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
+            this.rol = new System.Windows.Forms.Label();
             this.cbtipodocumento = new System.Windows.Forms.ComboBox();
-            this.txtnumerodocumento = new System.Windows.Forms.TextBox();
+            this.txtcedula = new System.Windows.Forms.TextBox();
             this.txtnombre = new System.Windows.Forms.TextBox();
             this.txtapellido = new System.Windows.Forms.TextBox();
             this.txtedad = new System.Windows.Forms.TextBox();
             this.rbadministrador = new System.Windows.Forms.RadioButton();
             this.rbusuario = new System.Windows.Forms.RadioButton();
-            this.txtcontraseñaadm = new System.Windows.Forms.TextBox();
-            this.btnguardar = new System.Windows.Forms.Button();
-            this.txtcontraseñausu = new System.Windows.Forms.TextBox();
+            this.txtcontraseña = new System.Windows.Forms.TextBox();
+            this.btnguardarregistro = new System.Windows.Forms.Button();
             this.btnsalir = new System.Windows.Forms.Button();
-            this.lblcontraseñaadm = new System.Windows.Forms.Label();
-            this.lblcontraseñausu = new System.Windows.Forms.Label();
+            this.lblcontraseña = new System.Windows.Forms.Label();
             this.btniniciarsesion = new System.Windows.Forms.Button();
             this.btnlimpiar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // label1
+            // hazturegistro
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(99, 27);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(137, 24);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Haz tu Registro";
+            this.hazturegistro.AutoSize = true;
+            this.hazturegistro.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.hazturegistro.Location = new System.Drawing.Point(257, 35);
+            this.hazturegistro.Name = "hazturegistro";
+            this.hazturegistro.Size = new System.Drawing.Size(137, 24);
+            this.hazturegistro.TabIndex = 0;
+            this.hazturegistro.Text = "Haz tu Registro";
             // 
             // lbltipodocumento
             // 
@@ -71,14 +71,14 @@
             this.lbltipodocumento.TabIndex = 1;
             this.lbltipodocumento.Text = "Tipo de Documento";
             // 
-            // lblnumerodocumento
+            // lblcedula
             // 
-            this.lblnumerodocumento.AutoSize = true;
-            this.lblnumerodocumento.Location = new System.Drawing.Point(49, 126);
-            this.lblnumerodocumento.Name = "lblnumerodocumento";
-            this.lblnumerodocumento.Size = new System.Drawing.Size(117, 13);
-            this.lblnumerodocumento.TabIndex = 2;
-            this.lblnumerodocumento.Text = "Número de Documento";
+            this.lblcedula.AutoSize = true;
+            this.lblcedula.Location = new System.Drawing.Point(49, 126);
+            this.lblcedula.Name = "lblcedula";
+            this.lblcedula.Size = new System.Drawing.Size(40, 13);
+            this.lblcedula.TabIndex = 2;
+            this.lblcedula.Text = "Cédula";
             // 
             // lblnombre
             // 
@@ -108,15 +108,15 @@
             this.lbledad.TabIndex = 5;
             this.lbledad.Text = "Edad";
             // 
-            // label7
+            // rol
             // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(455, 87);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(32, 16);
-            this.label7.TabIndex = 6;
-            this.label7.Text = "Rol";
+            this.rol.AutoSize = true;
+            this.rol.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rol.Location = new System.Drawing.Point(466, 104);
+            this.rol.Name = "rol";
+            this.rol.Size = new System.Drawing.Size(32, 16);
+            this.rol.TabIndex = 6;
+            this.rol.Text = "Rol";
             // 
             // cbtipodocumento
             // 
@@ -128,12 +128,12 @@
             this.cbtipodocumento.Size = new System.Drawing.Size(121, 21);
             this.cbtipodocumento.TabIndex = 7;
             // 
-            // txtnumerodocumento
+            // txtcedula
             // 
-            this.txtnumerodocumento.Location = new System.Drawing.Point(177, 123);
-            this.txtnumerodocumento.Name = "txtnumerodocumento";
-            this.txtnumerodocumento.Size = new System.Drawing.Size(100, 20);
-            this.txtnumerodocumento.TabIndex = 8;
+            this.txtcedula.Location = new System.Drawing.Point(177, 123);
+            this.txtcedula.Name = "txtcedula";
+            this.txtcedula.Size = new System.Drawing.Size(100, 20);
+            this.txtcedula.TabIndex = 8;
             // 
             // txtnombre
             // 
@@ -159,7 +159,7 @@
             // rbadministrador
             // 
             this.rbadministrador.AutoSize = true;
-            this.rbadministrador.Location = new System.Drawing.Point(352, 124);
+            this.rbadministrador.Location = new System.Drawing.Point(363, 141);
             this.rbadministrador.Name = "rbadministrador";
             this.rbadministrador.Size = new System.Drawing.Size(88, 17);
             this.rbadministrador.TabIndex = 12;
@@ -171,7 +171,7 @@
             // rbusuario
             // 
             this.rbusuario.AutoSize = true;
-            this.rbusuario.Location = new System.Drawing.Point(522, 122);
+            this.rbusuario.Location = new System.Drawing.Point(363, 183);
             this.rbusuario.Name = "rbusuario";
             this.rbusuario.Size = new System.Drawing.Size(61, 17);
             this.rbusuario.TabIndex = 13;
@@ -180,33 +180,24 @@
             this.rbusuario.UseVisualStyleBackColor = true;
             this.rbusuario.CheckedChanged += new System.EventHandler(this.Rbusuario_CheckedChanged);
             // 
-            // txtcontraseñaadm
+            // txtcontraseña
             // 
-            this.txtcontraseñaadm.Location = new System.Drawing.Point(352, 190);
-            this.txtcontraseñaadm.Name = "txtcontraseñaadm";
-            this.txtcontraseñaadm.Size = new System.Drawing.Size(100, 20);
-            this.txtcontraseñaadm.TabIndex = 14;
-            this.txtcontraseñaadm.UseSystemPasswordChar = true;
+            this.txtcontraseña.Location = new System.Drawing.Point(492, 182);
+            this.txtcontraseña.Name = "txtcontraseña";
+            this.txtcontraseña.Size = new System.Drawing.Size(100, 20);
+            this.txtcontraseña.TabIndex = 14;
             // 
-            // btnguardar
+            // btnguardarregistro
             // 
-            this.btnguardar.BackColor = System.Drawing.Color.Sienna;
-            this.btnguardar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnguardar.Location = new System.Drawing.Point(52, 286);
-            this.btnguardar.Name = "btnguardar";
-            this.btnguardar.Size = new System.Drawing.Size(133, 38);
-            this.btnguardar.TabIndex = 16;
-            this.btnguardar.Text = "Guardar";
-            this.btnguardar.UseVisualStyleBackColor = false;
-            // 
-            // txtcontraseñausu
-            // 
-            this.txtcontraseñausu.Location = new System.Drawing.Point(501, 190);
-            this.txtcontraseñausu.MaxLength = 6;
-            this.txtcontraseñausu.Name = "txtcontraseñausu";
-            this.txtcontraseñausu.Size = new System.Drawing.Size(100, 20);
-            this.txtcontraseñausu.TabIndex = 17;
-            this.txtcontraseñausu.UseSystemPasswordChar = true;
+            this.btnguardarregistro.BackColor = System.Drawing.Color.Sienna;
+            this.btnguardarregistro.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnguardarregistro.Location = new System.Drawing.Point(52, 286);
+            this.btnguardarregistro.Name = "btnguardarregistro";
+            this.btnguardarregistro.Size = new System.Drawing.Size(133, 46);
+            this.btnguardarregistro.TabIndex = 16;
+            this.btnguardarregistro.Text = "Guardar Registro";
+            this.btnguardarregistro.UseVisualStyleBackColor = false;
+            this.btnguardarregistro.Click += new System.EventHandler(this.btnguardarregistro_Click);
             // 
             // btnsalir
             // 
@@ -214,30 +205,20 @@
             this.btnsalir.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnsalir.Location = new System.Drawing.Point(469, 286);
             this.btnsalir.Name = "btnsalir";
-            this.btnsalir.Size = new System.Drawing.Size(133, 38);
+            this.btnsalir.Size = new System.Drawing.Size(133, 46);
             this.btnsalir.TabIndex = 19;
             this.btnsalir.Text = "Salir";
             this.btnsalir.UseVisualStyleBackColor = false;
             this.btnsalir.Click += new System.EventHandler(this.Btnsalir_Click);
             // 
-            // lblcontraseñaadm
+            // lblcontraseña
             // 
-            this.lblcontraseñaadm.AutoSize = true;
-            this.lblcontraseñaadm.Location = new System.Drawing.Point(369, 166);
-            this.lblcontraseñaadm.Name = "lblcontraseñaadm";
-            this.lblcontraseñaadm.Size = new System.Drawing.Size(61, 13);
-            this.lblcontraseñaadm.TabIndex = 20;
-            this.lblcontraseñaadm.Text = "Contraseña";
-            this.lblcontraseñaadm.Click += new System.EventHandler(this.Lblcontraseñaadm_Click);
-            // 
-            // lblcontraseñausu
-            // 
-            this.lblcontraseñausu.AutoSize = true;
-            this.lblcontraseñausu.Location = new System.Drawing.Point(522, 166);
-            this.lblcontraseñausu.Name = "lblcontraseñausu";
-            this.lblcontraseñausu.Size = new System.Drawing.Size(61, 13);
-            this.lblcontraseñausu.TabIndex = 22;
-            this.lblcontraseñausu.Text = "Contraseña";
+            this.lblcontraseña.AutoSize = true;
+            this.lblcontraseña.Location = new System.Drawing.Point(510, 143);
+            this.lblcontraseña.Name = "lblcontraseña";
+            this.lblcontraseña.Size = new System.Drawing.Size(61, 13);
+            this.lblcontraseña.TabIndex = 20;
+            this.lblcontraseña.Text = "Contraseña";
             // 
             // btniniciarsesion
             // 
@@ -245,7 +226,7 @@
             this.btniniciarsesion.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btniniciarsesion.Location = new System.Drawing.Point(191, 286);
             this.btniniciarsesion.Name = "btniniciarsesion";
-            this.btniniciarsesion.Size = new System.Drawing.Size(133, 38);
+            this.btniniciarsesion.Size = new System.Drawing.Size(133, 46);
             this.btniniciarsesion.TabIndex = 23;
             this.btniniciarsesion.Text = "Iniciar Sesión";
             this.btniniciarsesion.UseVisualStyleBackColor = false;
@@ -253,11 +234,11 @@
             // 
             // btnlimpiar
             // 
-            this.btnlimpiar.BackColor = System.Drawing.Color.LightSeaGreen;
+            this.btnlimpiar.BackColor = System.Drawing.Color.Sienna;
             this.btnlimpiar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnlimpiar.Location = new System.Drawing.Point(330, 286);
             this.btnlimpiar.Name = "btnlimpiar";
-            this.btnlimpiar.Size = new System.Drawing.Size(133, 38);
+            this.btnlimpiar.Size = new System.Drawing.Size(133, 46);
             this.btnlimpiar.TabIndex = 24;
             this.btnlimpiar.Text = "Limpiar";
             this.btnlimpiar.UseVisualStyleBackColor = false;
@@ -268,31 +249,30 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.RosyBrown;
-            this.ClientSize = new System.Drawing.Size(646, 343);
+            this.ClientSize = new System.Drawing.Size(646, 363);
             this.Controls.Add(this.btnlimpiar);
             this.Controls.Add(this.btniniciarsesion);
-            this.Controls.Add(this.lblcontraseñausu);
-            this.Controls.Add(this.lblcontraseñaadm);
+            this.Controls.Add(this.lblcontraseña);
             this.Controls.Add(this.btnsalir);
-            this.Controls.Add(this.txtcontraseñausu);
-            this.Controls.Add(this.btnguardar);
-            this.Controls.Add(this.txtcontraseñaadm);
+            this.Controls.Add(this.btnguardarregistro);
+            this.Controls.Add(this.txtcontraseña);
             this.Controls.Add(this.rbusuario);
             this.Controls.Add(this.rbadministrador);
             this.Controls.Add(this.txtedad);
             this.Controls.Add(this.txtapellido);
             this.Controls.Add(this.txtnombre);
-            this.Controls.Add(this.txtnumerodocumento);
+            this.Controls.Add(this.txtcedula);
             this.Controls.Add(this.cbtipodocumento);
-            this.Controls.Add(this.label7);
+            this.Controls.Add(this.rol);
             this.Controls.Add(this.lbledad);
             this.Controls.Add(this.lblapellido);
             this.Controls.Add(this.lblnombre);
-            this.Controls.Add(this.lblnumerodocumento);
+            this.Controls.Add(this.lblcedula);
             this.Controls.Add(this.lbltipodocumento);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.hazturegistro);
             this.Name = "Form_Registros3";
-            this.Text = "Tipo";
+            this.Text = "Registrando";
+            this.Load += new System.EventHandler(this.Form_Registros3_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -300,27 +280,26 @@
 
         #endregion
 
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label hazturegistro;
         private System.Windows.Forms.Label lbltipodocumento;
-        private System.Windows.Forms.Label lblnumerodocumento;
+        private System.Windows.Forms.Label lblcedula;
         private System.Windows.Forms.Label lblnombre;
         private System.Windows.Forms.Label lblapellido;
         private System.Windows.Forms.Label lbledad;
-        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label rol;
         private System.Windows.Forms.ComboBox cbtipodocumento;
-        private System.Windows.Forms.TextBox txtnumerodocumento;
+        private System.Windows.Forms.TextBox txtcedula;
         private System.Windows.Forms.TextBox txtnombre;
         private System.Windows.Forms.TextBox txtapellido;
         private System.Windows.Forms.TextBox txtedad;
         private System.Windows.Forms.RadioButton rbadministrador;
         private System.Windows.Forms.RadioButton rbusuario;
-        private System.Windows.Forms.TextBox txtcontraseñaadm;
-        private System.Windows.Forms.Button btnguardar;
-        private System.Windows.Forms.TextBox txtcontraseñausu;
+        private System.Windows.Forms.TextBox txtcontraseña;
+        private System.Windows.Forms.Button btnguardarregistro;
         private System.Windows.Forms.Button btnsalir;
-        private System.Windows.Forms.Label lblcontraseñaadm;
-        private System.Windows.Forms.Label lblcontraseñausu;
+        private System.Windows.Forms.Label lblcontraseña;
         private System.Windows.Forms.Button btniniciarsesion;
         private System.Windows.Forms.Button btnlimpiar;
+        private readonly EventHandler lblcontraseñaadministrador_Click;
     }
 }

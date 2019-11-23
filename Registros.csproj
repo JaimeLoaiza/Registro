@@ -44,8 +44,12 @@
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
+    <Reference Include="WebDriver, Version=3.141.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\Selenium.WebDriver.3.141.0\lib\net45\WebDriver.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Class_Matriz.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -112,6 +116,12 @@
     <Compile Include="Form_ÁreaCuadrado10.Designer.cs">
       <DependentUpon>Form_ÁreaCuadrado10.cs</DependentUpon>
     </Compile>
+    <Compile Include="Matriz Administrador.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Matriz Administrador.Designer.cs">
+      <DependentUpon>Matriz Administrador.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Usuario y Contraseña 2.cs">
@@ -153,6 +163,9 @@
     <EmbeddedResource Include="Form_ÁreaCuadrado10.resx">
       <DependentUpon>Form_ÁreaCuadrado10.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Matriz Administrador.resx">
+      <DependentUpon>Matriz Administrador.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -165,6 +178,7 @@
     <EmbeddedResource Include="Usuario y Contraseña 2.resx">
       <DependentUpon>Usuario y Contraseña 2.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
